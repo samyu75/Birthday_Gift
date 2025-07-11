@@ -1,0 +1,886 @@
+body{
+    background-image:url(pbg.png);
+    background-size: 100%;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    bottom:0%;
+    right:0%;
+    }
+    .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.initial-content {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+    
+
+.heading{
+    width:300px;
+    color:white;
+    width: 90%;
+    top:40%;
+    left:40%;
+    font-size: 50px;
+    font-style: italic;
+    position:absolute;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transition: all 1s ease;
+
+}
+.mainimg{
+    background-image:url(kid.jpg);
+    background-size: 100%;
+    background-position: center;
+    height:25px;
+    width:25px;
+    top:400px;
+    left:400px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    opacity: 0;
+    transition: 5s;
+    
+}
+.mainimg_ani{
+     background-image:url(kid.jpg);
+    background-size: 100%;
+    background-position: center;
+    height:250px;
+    width:200px;
+    top:35px;
+    left:20px;
+    border-radius: 30px;
+    position: absolute;
+    transition: 5s;
+
+
+}
+.mainpara{
+    font-size: 20px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    transition: 5s;
+    width:250px;
+    position: absolute;
+    color: white;
+    z-index: 2;
+    left:450px;
+    top:400px;
+    opacity: 0;
+    line-height: 5px;
+    
+}
+
+.mainpara_ani{ font-size: 20px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    transition: 5s;
+    width:600px;
+    position: absolute;
+    color: white;
+    z-index: 2;
+    left:280px;
+    top:30px;
+    line-height: 24px;
+    
+    
+
+}
+.hbsty{
+    top:0px;
+    position:absolute;
+    padding-top: 10px;
+    color:white;
+    font-size: 35px;
+    transition: 5s;
+    left:50px;
+    font-size: 20px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:600px;
+    
+    }
+.startbutton{
+
+    background-image: url(but1.png);
+    background-size: 100%;
+   padding: 30px;
+   bottom: 10%;
+    right:50%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    transition: transform 2s ease 0s;
+    display:block;
+}
+
+.startbutton:hover{
+    transform:rotate(130deg)
+    
+}
+
+
+
+
+.sports{
+    top: 700px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: bisque;
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 2;
+    margin-left: 10%;
+    border-radius: 10px;
+    background-image: url(b1.png);
+    background-size: 100%;
+  display: block;
+  
+  opacity: 0;  
+}
+.sports_ani{
+    top: 380px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: bisque;
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 5;
+    margin-left: 10%;
+    border-radius: 10px;
+    background-image:url(b1.png) ;
+    background-size: 100%;
+  display: block;
+  opacity: 0.2;
+  transition: 4s;   
+}
+.sports_ani:hover{
+    background-image:linear-gradient(black,bisque,url(advantage.png));
+    opacity: 1;
+    padding: 2px;
+}
+
+
+
+.box1_btn{
+    margin-top:30%;
+    margin-left: 40%;
+    bottom:10%;
+    padding:4px;
+    position: absolute;
+    border-radius: 10px;
+    border-color: none;
+    background-color: rgb(5, 222, 5);
+    color:white;
+    display: block;
+}
+
+
+
+.disadvantage{
+    top: 700px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: rgb(255, 218, 107);
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 2;
+    margin-left: 30%;
+    border-radius: 10px;
+    
+    background-image:url(b2.png);
+    background-size: 100%;
+    opacity: 0;
+    
+}
+.disadvantage_ani{
+    top: 380px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: rgb(255, 218, 107);
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 2;
+    margin-left: 30%;
+    border-radius: 10px;
+    transition: 4.5s;
+    background-image:url(b2.png) ;
+    background-size: 100%;
+    opacity: 0.2;
+    
+}
+.disadvantage_ani:hover{
+    background-image:linear-gradient(black,bisque,url(advantage.png));
+    opacity: 1;
+    padding: 2px;
+    transition: 1s;
+}
+
+
+
+
+.box2_btn{
+    margin-top:30%;
+    margin-left: 40%;
+    bottom:10%;
+    padding:4px;
+    position: absolute;
+    border-radius: 10px;
+    border-color: none;
+    background-color: rgb(0, 255, 0);
+    color:white;
+}
+
+
+.love{
+    top: 700px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: bisque;
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 2;
+    margin-left: 50%;
+    border-radius: 10px;
+    transition: 5s;
+    background-image:url(b4.png);
+    background-size: 100%;
+    opacity: 0;
+    
+}
+.love_ani{
+    top: 380px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: bisque;
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 2;
+    margin-left: 50%;
+    border-radius: 10px;
+    transition: 5s;
+    background-image:url(b4.png);
+    background-size: 100%;
+    opacity: 0.2;
+    
+}
+.love_ani:hover{
+    background-image:linear-gradient(black,bisque,url(advantage.png));
+    opacity: 1;
+    padding: 2px;
+}
+
+
+
+.box3_btn{
+    margin-top:30%;
+    margin-left: 40%;
+    bottom:10%;
+    padding:4px;
+    position: absolute;
+    border-radius: 10px;
+    border-color: none;
+    background-color: rgb(5, 222, 5);
+    color:white;
+}
+
+
+.secret{
+    top: 700px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: bisque;
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 2;
+    margin-left: 70%;
+    border-radius: 10px;
+    transition: 5s;
+    background-image:url(b3.png);
+    background-size: 100%;
+    opacity: 0;
+}
+.secret_ani{
+   top: 380px;
+    height:40%;
+    width: 15%;
+    position: absolute;
+    border:solid;
+    border-color: bisque;
+    box-shadow: 4px 3px 3px 0px grey;
+    color:white;
+    z-index: 2;
+    margin-left: 70%;
+    border-radius: 10px;
+    transition: 5.5s;
+    background-image:url(b3.png);
+    background-size: 100%;
+    opacity: 0.2;
+    
+}
+.secret_ani:hover{
+    background-image:linear-gradient(black,bisque,url(advantage.png));
+    opacity: 1;
+    padding: 2px;
+
+}
+
+
+
+.box4_btn{
+    margin-top:30%;
+    margin-left: 40%;
+    bottom:10%;
+    padding:4px;
+    position: absolute;
+    border-radius: 10px;
+    border-color: none;
+    background-color: rgb(5, 222, 5);
+    color:white;
+}
+
+
+.adv1{
+    color:white;
+    background-color:rgba(44, 44, 40, 0.955);
+    height:600px;
+    width:900px;
+    top:90px;
+    left:300px;
+    border-radius: 30px;
+    border-color: rgba(47, 47, 47, 0.881) ;
+    border:solid;
+    z-index: 4;
+    position: absolute;
+    display:none;
+
+    
+}
+.adv1 p{
+    background-image: url(positive.jpg);
+    background-size: 100%;
+    height: 380px;
+    width: 200px;
+    margin: 40px;
+    border-radius: 100px;
+    
+}
+.adv1 h1{
+    color: pink;
+    top:150px;
+    position: absolute;
+    z-index: 3;
+    left: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.adv1 h5{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   top:160px;
+    position: absolute;
+    width: 640px;
+    right:10px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    line-height: 24px;
+
+}
+.bar1{
+    color: white;
+    background-color: green;
+    border-radius: 100px;
+    left: 250px;
+    top:100px;
+    position: absolute;
+    padding:5px;
+
+}
+.loyality{
+    position: absolute;
+    left: 300px;
+    top:0px;
+    padding: 15px;
+    height:1px;
+    width:60px;
+    border-radius: 50px;
+    background-color:  rgb(209, 0, 0);
+    font-size: 15px;
+    font-weight: 300px;
+    transition: 5s;
+    opacity: 0;
+    
+    
+  
+
+}
+
+.loyality_ani{
+    width:500px;
+    position: absolute;
+    left: 300px;
+     top:0px;
+    padding: 15px;
+    height:1px;
+   border-radius: 50px;
+    background-color: rgb(3, 205, 3);
+    font-size: 15px;
+    font-weight: 300px;
+    transition: 5s;
+    opacity: 1;
+    
+    
+}
+.adlove{
+    position: absolute;
+     left: 300px;
+    top:37px;
+    padding: 15px;
+    height:1px;
+    width:60px;
+   border-radius: 50px;
+    background-color: rgb(209, 0, 0);
+    font-size: 15px;
+    opacity: 0;
+    font-weight: 300px;
+    transition: 5s;
+    
+  
+
+}
+
+.adlove_ani{
+    width:500px;
+     position: absolute;
+     left: 300px;
+   top:37px;
+    padding: 15px;
+    height:1px;
+   border-radius: 50px;
+    background-color: rgb(3, 205, 3);
+    font-size: 15px;
+    opacity: 1;
+    transition: 5s;
+    }
+    .care{
+        position: absolute;
+        left: 300px;
+       top:75px;
+        padding: 15px;
+        height:1px;
+        width:60px;
+        border-radius: 50px;
+    background-color:  rgb(209, 0, 0);
+        font-size: 15px;
+        opacity: 0;
+        transition: 5s;
+        
+      
+    
+    }
+    
+    .care_ani{
+        width:450px;
+        position: absolute;
+        left: 300px;
+       top:75px;
+        padding: 15px;
+        height:1px;
+        border-radius: 50px;
+    background-color: rgb(5, 165, 5);
+        font-size: 15px;
+        opacity: 1;
+        transition: 5s;
+        
+        
+    }
+    .sensitive{
+        position: absolute;
+        left: 300px;
+        top:115px;
+        padding: 15px;
+        height:1px;
+        width:60px;
+        border-radius: 50px;
+    background-color: rgb(209, 0, 0);
+        font-size: 15px;
+        opacity: 0;
+        transition: 5s;
+        
+      
+    
+    }
+    
+    .sensitive_ani{
+        width:500px;
+         position: absolute;
+          top:115px;
+        left: 300px;
+        bottom:315px;
+        padding: 15px;
+        height:1px;
+        border-radius: 50px;
+    background-color: rgb(3, 205, 3);
+        font-size: 15px;
+        text-underline-position: below;
+        opacity: 1;
+        transition: 5s;
+        
+        
+    }
+   
+   
+
+    .adv2{
+        color:white;
+        background-color:  rgba(47, 47, 47, 0.881);
+        height:500px;
+        width:900px;
+        top:90px;
+        left:300px;
+        border-radius: 30px;
+        border-color: rgba(47, 47, 47, 0.881) ;
+        border:solid;
+        z-index: 4;
+        position: absolute;
+        display: none;        
+    }
+    .adv2 p{
+        background-image:url(e1.jpg);
+        background-size: 230px;
+        height: 350px;
+        width: 200px;
+        margin: 40px;
+        border-radius: 100px;
+        
+    }
+    .adv2 h1{
+        color: pink;
+        top:120px;
+        position: absolute;
+        z-index: 3;
+        left: 400px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-break:loose;
+    }
+    .adv2 h5{
+       
+         top:155px;
+    position: absolute;
+    width: 640px;
+    right:10px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    line-height: 25px;
+
+        
+
+    }
+    .bar2{
+    color: white;
+    background-color: green;
+    border-radius: 100px;
+    left: 250px;
+    top:100px;
+    position: absolute;
+    padding:5px;
+
+}
+   .ego{
+        position: absolute;
+        left: 300px;
+       top:15px;
+        padding: 20px;
+        height:1px;
+        width:60px;
+        border-radius: 50px;
+    background-color: rgb(5, 165, 5); 
+        font-size: 15px;
+        opacity: 0;
+        transition: 5s;
+        
+      
+    
+    }
+    
+    .ego_ani{
+        width:200px;
+        position: absolute;
+        left: 300px;
+       top:15px;
+        padding: 20px;
+        height:1px;
+        border-radius: 50px;
+    background-color:rgb(182, 104, 9); 
+        font-size: 15px;
+        opacity: 1;
+        transition: 5s;
+        
+        
+    }
+     .anger{
+        position: absolute;
+        left: 300px;
+       top:60px;
+        padding: 20px;
+        height:1px;
+        width:60px;
+        border-radius: 50px;
+    background-color: rgb(5, 165, 5); 
+        font-size: 15px;
+        opacity: 0;
+        transition: 5s;
+        
+      
+    
+    }
+    
+    .anger_ani{
+        width:250px;
+        position: absolute;
+        left: 300px;
+       top:60px;
+        padding: 20px;
+        height:1px;
+        border-radius: 50px;
+    background-color:rgb(155, 54, 3); 
+        font-size: 15px;
+        opacity: 1;
+        transition: 5s;
+        
+        
+    }
+.close{
+    border-radius: 100%;
+    padding:8px;
+    top:0%;
+    position: absolute;
+    left:20px;
+    top: 20px;
+    background-color: red;
+    color: white;
+    border-color: white;
+
+}
+.kavi{
+    color:white;
+    background-color:  rgba(47, 47, 47, 0.881);
+    height:500px;
+    width:900px;
+    top:90px;
+    left:300px;
+    border-radius: 30px;
+    border-color: rgba(47, 47, 47, 0.705) ;
+    border:solid;
+    z-index: 4;
+    position: absolute;
+    display:none;
+    
+}
+.kavi p{
+    background-image:url(poetry.jpg) ;
+    background-size: 100%;
+    height: 340px;
+    width: 200px;
+    margin: 40px;
+    border-radius: 100px;
+    
+}
+.kavi h1{
+    color: pink;
+    top:0px;
+    position: absolute;
+    z-index: 3;
+    margin-left: 400px;}
+.kavi h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         top:50px;
+    position: absolute;
+    width: 640px;
+    right:10px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    text-align: center;}  
+    
+    .close{
+        border-radius: 100%;
+        padding:8px;
+        top:0%;
+        position: absolute;
+        left:20px;
+        top: 20px;
+        background-color: red;
+        color: white;
+        border-color: white;}
+
+
+        .secrettt{
+            color:white;
+            background-color: rgba(32, 28, 28, 0.829);
+            height:600px;
+            width:900px;
+            top:90px;
+            left:300px;
+            border-radius: 30px;
+            border-color: rgba(47, 47, 47, 0.705) ;
+            border:solid;
+            z-index: 4;
+            position: absolute;
+            display:none;
+    
+            
+        }
+        .img1{
+            background-image:url(sec1.jpg) ;
+            background-size: 100px;
+            height: 100px;
+            width: 200px;
+            left:100px;
+            border-radius: 20px;
+            position: absolute;
+            
+        }
+        .img2{
+            background-image:url(park.PNG) ;
+            background-size: 100px;
+            top:120px;
+            height: 100px;
+            width: 100px;
+            left:100px;
+            border-radius: 20px;
+            position: absolute;
+            
+        }
+        .img21{
+            background-image:url(gibili.jpg);
+            background-size: 100px;
+            top:120px;
+            height: 100px;
+            width: 100px;
+            left:250px;
+            border-radius: 20px;
+            position: absolute;
+            
+        }
+        .img3{
+            background-image:url(sec.jpg) ;
+            background-size: 100px;
+            top:240px;
+            height: 100px;
+            width: 100px;
+            left:100px;
+            border-radius: 20px;
+            position: absolute;
+            
+        }
+        .img4{
+            background-image:url(fav.jpg);
+            background-size: 100%;
+            top:360px;
+            height: 100px;
+            width: 200px;
+            left:100px;
+            border-radius: 20px;
+            position: absolute;
+            
+        }
+     
+        
+            
+            .close{
+                border-radius: 100%;
+                padding:8px;
+                top:0%;
+                position: absolute;
+                left:20px;
+                top: 20px;
+                background-color: red;
+                color: white;
+                border-color: white;}
+
+                .para1{
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    top:0px;
+                    position: absolute;
+                    width: 550px;
+                    right:10px;
+                    font-size: 14px;
+                    font-weight: 250x;
+                    line-height: 20px;
+                    letter-spacing: 0.7px;}  
+ .para2{
+    color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
+         top:150px;
+         position: absolute;
+         width: 550px;
+         right:10px;
+         left:370px;
+         font-size: 14px;
+         font-weight: 300px;
+         letter-spacing: 1px;
+        }  
+
+        .para3{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            top:260px;
+            position: absolute;
+            width: 550px;
+            right:10px;
+            font-size: 14px;
+            font-weight: 300px;
+            letter-spacing: 1px;}  
+
+            .para4{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                top:370px;
+                position: absolute;
+                width: 550px;
+                right:10px;
+                font-size: 14px;
+                font-weight: 300px;
+                letter-spacing: 1px;}  
+
+                .para5{
+                    font-style: italic;
+                top:500px;
+                position: absolute;
+                width: 800px;
+                right:10px;
+                font-size: 12pxx;
+                letter-spacing: 0.7px;}  
+
+
